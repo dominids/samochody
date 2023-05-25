@@ -1,0 +1,5 @@
+{
+    "cars": [
+    { "id": 1, "name": "Audi A6", "release_year": "2018", "mileage": "120000km", "KM": "280KM", "price": "50000zł" }
+  ]
+}
