@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.offer_container {
+    flex-flow: row wrap;
+    display: flex;
+    gap: 10px 30px;
+    align-items: center;
+
+}
+
+a {
+    text-decoration: none;
+    border: 2px solid gainsboro;
+}
+
+img {
+    width: 300px;
+}
+
+button{
+cursor: pointer;
+}

@@ -2,7 +2,7 @@
     <div class="center">
         <nav class="element1">
             <div class="title">
-                <img src="./assets/logo.png" alt="logo" width="70px"> <!-- bruh-->
+                <a routerLink="/dashboard"><img src="./assets/logo.png" alt="logo" width="70px"></a> <!-- bruh-->
                 <a class="title2" routerLink="/dashboard">{{title}}</a>
             </div>
             <div class="search">
@@ -14,8 +14,8 @@
                 <router-outlet></router-outlet>
             </div>
         </div>
-        <footer class="element3">
-            <p class="creator">Creator: Dominik Kłyszyński</p>
+        <footer class="element3" style="clear:both;">
+            <p class="creator">Creator: Dominik Kłyszyński<br><span style="font-size:10px">Logo: Jan Rakowski</span></p>
         </footer>
     </div>
 </div>
