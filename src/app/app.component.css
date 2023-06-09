@@ -1,0 +1,140 @@
+*{
+    /*border: 1px solid red;*/
+}
+/*----------BASE--------------*/
+.contaner {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.center {
+    flex: 300px;
+    display: flex;
+    flex-flow: column;
+}
+
+/*----------NAV--------------*/
+nav {
+    border: 1px solid blue;
+    display: flex;
+    flex-flow: row;
+    background-color: #eee;
+    flex-wrap: wrap;
+}
+
+/* search bar */
+nav .search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 2 200px;
+    min-width: 150px;
+    margin-right: 16px;
+}
+
+/* title */
+.title {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.title2 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 310%;
+    background-color: #eee;
+    text-decoration: none;
+}
+
+/* responsive */
+@media (min-width: 1000px) {
+    .search-bar input {
+        transition: width .4s ease-in-out;
+    }
+
+    .search-bar input:focus {
+        width: 300px;
+    }
+}
+
+@media (max-width:800px){
+    app-hero-search{
+            width: 100%;
+        }
+}
+
+/*----------CONTENT--------------*/
+.list{
+    flex: 1;
+}
+.content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 75vh;
+}
+
+.app{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+}
+/*----------FOOTER--------------*/
+footer {
+    border: 1px solid #369;
+    background-color: #eee;
+}
+
+footer .creator {
+    padding: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+    font-size: 120%;
+    text-align: right;
+}
+
+/*----------REST--------------*/
+
+:host {
+    display: block;
+    margin-top: 1rem;
+}
+
+body,
+input[type="text"],
+button {
+    color: #333;
+    font-family: Cambria, Georgia, serif;
+}
+
+button {
+    background-color: #eee;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+
+}
+
+button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,5 +1,10 @@
 {
     "cars": [
-    { "id": 1, "name": "Audi A6", "release_year": "2018", "mileage": "120000km", "KM": "280KM", "price": "50000zł" }
+    { "id": 1, "name": "Audi A6", "release_year": "2018", "mileage": "120000km", "KM": "280KM", "price": "50000zł" },
+    { "id": 2, "name": "Audi A6", "release_year": "2020", "mileage": "120000km", "KM": "280KM", "price": "10000zł" },
+    { "id": 3, "name": "Audi A6", "release_year": "2018", "mileage": "120000km", "KM": "280KM", "price": "50000zł" },
+    { "id": 4, "name": "Audi A6", "release_year": "2018", "mileage": "120000km", "KM": "280KM", "price": "50000zł" },
+    { "id": 5, "name": "Audi A6", "release_year": "2018", "mileage": "120000km", "KM": "280KM", "price": "50000zł" },
+    { "id": 6, "name": "Audi A6", "release_year": "2018", "mileage": "120000km", "KM": "280KM", "price": "50000zł" }
   ]
 }

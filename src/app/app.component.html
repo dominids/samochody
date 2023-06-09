@@ -1,1 +1,21 @@
-<title>{{title}}</title>
+<div class="contaner">
+    <div class="center">
+        <nav class="element1">
+            <div class="title">
+                <img src="./assets/logo.png" alt="logo" width="70px"> <!-- bruh-->
+                <a class="title2" routerLink="/dashboard">{{title}}</a>
+            </div>
+            <div class="search">
+                <app-search></app-search>
+            </div>
+        </nav>
+        <div class="content element2">
+            <div class="app">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+        <footer class="element3">
+            <p class="creator">Creator: Dominik Kłyszyński</p>
+        </footer>
+    </div>
+</div>
