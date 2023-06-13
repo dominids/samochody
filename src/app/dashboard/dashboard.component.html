@@ -1,13 +1,13 @@
-<div class="container"> <!--routerLink="/detail/{ {hero._id}}-->
+<div class="container">
     <div class="offer_container">
         <a *ngFor="let car of cars">
             <img src="./assets/{{car.id}}.jpg">
             <p class="big">{{car.name}}</p>
-            <p>{{car.release_year}}</p>
+            <p>{{car.release_year}}r.</p>
             <p>{{car.mileage}}</p>
             <p>{{car.KM}}</p>
             <p class="big">{{car.price}}</p>
-            <button>KUP</button>
+            <button routerLink="/pucharse/{{car.id}}">KUP</button>
         </a>
     </div>
 </div>

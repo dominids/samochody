@@ -1,9 +1,9 @@
 {
     "cars": [
     { "id": 1, "name": "Audi A6", "release_year": "2018", "mileage": "120000km", "KM": "280KM", "price": "50000zł" },
-    { "id": 2, "name": "Audi A6", "release_year": "2020", "mileage": "120000km", "KM": "280KM", "price": "10000zł" },
-    { "id": 3, "name": "Audi A6", "release_year": "2018", "mileage": "120000km", "KM": "280KM", "price": "50000zł" },
-    { "id": 4, "name": "Audi A6", "release_year": "2018", "mileage": "120000km", "KM": "280KM", "price": "50000zł" },
-    { "id": 5, "name": "Audi A6", "release_year": "2018", "mileage": "120000km", "KM": "280KM", "price": "50000zł" }
+    { "id": 2, "name": "Toyota Yaris", "release_year": "2021", "mileage": "18000km", "KM": "116KM", "price": "82000zł" },
+    { "id": 3, "name": "Bugatti", "release_year": "2022", "mileage": "100km", "KM": "1500KM", "price": "10000000zł" },
+    { "id": 4, "name": "Honda Civic", "release_year": "1998", "mileage": "36190km", "KM": "90KM", "price": "29900zł" },
+    { "id": 5, "name": "Fiat Seicento", "release_year": "1999", "mileage": "9999999km", "KM": "54KM", "price": "1000zł" }
   ]
 }

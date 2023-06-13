@@ -1,11 +1,10 @@
 <div id="search-component">
-    <input type="search" #searchBox placeholder="Szukaj marki" id="search-box"  />
-    <!--(blur)="search('')" (input)="search(searchBox.value)" (focus)="search(searchBox.value)" -->
+    <input type="search" #searchBox placeholder="Search for mark" id="search-box" (blur)="search('')" (input)="search(searchBox.value)" (focus)="search(searchBox.value)" />
     <ul class="search-result">
-        <!--<li *ngFor="let hero of heroes$ | async">
-            <a routerLink="/detail/{{hero._id}}">
-                {{hero.name}}
+        <li *ngFor="let car of cars$ | async">
+            <a routerLink="/pucharse/{{car.id}}">
+                {{car.name}}
             </a>
-        </li>-->
+        </li>
     </ul>
 </div>

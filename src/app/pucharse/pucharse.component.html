@@ -1,1 +1,74 @@
-<p>pucharse works!</p>
+<div class="container" *ngIf="car">
+  <div class="car" [hidden]="submitted">
+    <div>
+      <form [formGroup]='carForm'>
+        <div class="form-group">
+          <label><input type="radio" name="payment" formControlName="payment" value="Leasing"> Leasing</label>
+          <label><input type="radio" name="payment" formControlName="payment" value="Cash"> Cash</label>
+        </div><br>
+
+        <div class="form-group">
+          <div class="name">
+            <div>
+              <label for="surname">Name and surname</label>
+              <span class="alert alert-danger" *ngIf="surname&& surname.invalid && surname.touched"> field is not
+                valid</span>
+            </div>
+            <input type="text" class="form-control" formControlName="surname">
+          </div><br>
+          <div class="delivery">
+            <div>
+              <label for="name">Delivery place</label>
+              <span class="alert alert-danger" *ngIf="deliveryAdress && deliveryAdress.invalid && deliveryAdress.touched"> delivery can't
+                be empty</span>
+            </div>
+            <input type="text" class="form-control" formControlName="deliveryAdress">
+          </div><br>
+          <div class="delivery_date">
+            <div><label>Delivery date</label></div>
+            <input type="date" class="form-control" formControlName="delivery_date" value="{{date_now}}" min="{{date_now}}"
+               max="{{date_then}}">
+          </div>
+        </div>
+
+        <h1>Accessories</h1>
+        <div class="acc">
+          <div>winter tyres<br><b>2000zł</b></div><button class="add" id="0" (click)="display(0)"><span
+              id="plus0">{{symbol1}}</span></button>
+        </div>
+        <div class="acc">
+          <div>fragrance pendant<br><b>5zł</b></div><button class="add" id="1" (click)="display(1)"><span
+              id="plus1">{{symbol2}}</span></button>
+        </div>
+        <div class="acc">
+          <div>an additional year of
+            warranty<br><b>5000zł</b></div><button class="add" id="2" (click)="display(2)"><span
+              id="plus2">{{symbol3}}</span></button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+
+
+
+  <div class="car2" [hidden]="submitted">
+    <h2>{{car.name | uppercase}} Details</h2>
+    <h3>Start price {{car.price}}</h3>
+    <h3 *ngFor="let addon of addons">{{ addon.name }} - {{ addon.price }}</h3>
+    <h2>Summary price {{price}} zł</h2>
+    <button type="submit" class="btn btn-success" [disabled]="carForm.invalid" (click)="onSubmit()">Submit</button>
+    <button type="button" (click)="goBack()">go back</button>
+  </div>
+
+
+  <div class="car3" [hidden]="!submitted">
+    <h1>Thanks for buying {{car.name}}! </h1> <img src="./assets/{{car.id}}.jpg">
+    <h2>Delivery date is: {{date2}}</h2>
+    <h2>On adress: {{adress2}}</h2>
+    <h2>Payment method: {{payment2}}</h2>
+
+    <h2>Price: {{price}}zł</h2>
+  </div>
+</div>
